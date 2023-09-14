@@ -16,7 +16,7 @@ Currently, we support the following:
 
 For detailed sample code, please refer to [this link](https://github.com/dinngo/protocolink-contract/blob/master/test/integration/AaveV2.t.sol#L119)
 
-<figure><img src="../../.gitbook/assets/callbacks (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/callbacks (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

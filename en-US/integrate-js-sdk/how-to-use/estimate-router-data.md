@@ -18,12 +18,30 @@ const routerData: api.RouterData = {
 
 ### Step 2: Estimate Router Data Result
 
-Next, use `api.estimateRouterData` to estimate how much funds will be spent (funds) and how many balances will be obtained (balances) from this transaction. It will also identify any approvals that the user needs to execute (approvals) before the transaction and whether there is any permit2 data that the user needs to sign before proceeding (permitData).
+Next, use `api.estimateRouterData` to estimate how much funds will be spent (funds) and how many balances will be obtained (balances) from this transaction. It will also identify any approvals that the user needs to execute (approvals) before the transaction.
+
+In the current implementation of Permit2, users have two options for authorizing [`Agent`](../../smart-contract/overview/agent.md) to spend their assets: `permit` and `approve`. These methods provide distinct approaches to token authorization, allowing users to choose the one that best suits their needs. If not specified, `permit` is the default behavior.
+
+```typescript
+type Permit2Type = 'permit' | 'approve';
+```
+
+The `permit` method involves obtaining authorization data (`permitData`) for the ERC20 tokens being spent in the router data. Users are required to sign this data. The `permitData` and the associated signature are then sent to the Protocolink API as part of the transaction.
 
 ```typescript
 import * as api from '@protocolink/api';
 
 const estimateResult = await api.estimateRouterData(routerData);
+// or
+const estimateResult = await api.estimateRouterData(routerData, 'permit');
+```
+
+The `approve` method provides users with the necessary transactions to approve the expenditure of ERC20 tokens in the router data. Users must complete these approval transactions before sending the router transaction.
+
+```typescript
+import * as api from '@protocolink/api';
+
+const estimateResult = await api.estimateRouterData(routerData, 'approve');
 ```
 
 The structure of the `estimateResult` obtained is roughly as follows:
@@ -80,7 +98,13 @@ The structure of the `estimateResult` obtained is roughly as follows:
 
 ### Step 3: Approvals (optional)
 
-For this transaction, the user needs to approve Permit2 contract to spend his USDC first. If using `ethers` package, you can refer to the following code snippet to help the user send approval transactions:
+For this transaction, the user may need to perform one or more of the following approvals before proceeding:
+
+* Approve the Permit2 contract to spend their assets.
+* Approve the `Agent` to spend their assets.
+* Authorize the `Agent` to execute protocol specific operations that require authorization.
+
+If using `ethers` package, you can refer to the following code snippet to help the user send approval transactions:
 
 ```typescript
 const signer = provider.getSigner(account);

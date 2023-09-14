@@ -7,7 +7,7 @@
 Provides the transaction request that needs to be sent, comprising the Router contract `address` (to), transaction `data` (data), and the amount of ETH to be carried in the transaction (value).
 
 <pre class="language-javascript"><code class="lang-javascript">const getRouterTransactionRequest = async (chainId, account, logics) => {
-    const result = await client.post('/v1/transactions', {
+    const result = await client.post('/v1/transactions/build', {
         body: {
             chainId: chainId,
             account: account,

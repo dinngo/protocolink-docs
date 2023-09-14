@@ -6,9 +6,16 @@
 
 Estimates of how much funds will be spent (**funds**) and how many balances will be obtained (**balances**) from this transaction. It will also identify any approvals that the user needs to execute (**approvals**) before the transaction and whether there is any Permit2 data that the user needs to sign before proceeding (**permitData**).
 
+In the current implementation of Permit2, users have two options for authorizing [`Agent`](../../smart-contract/overview/agent.md) to spend their assets: `permit` and `approve`. These methods provide distinct approaches to token authorization, allowing users to choose the one that best suits their needs. If not specified, `permit` is the default behavior.
+
+The `permit` method involves obtaining authorization data (`permitData`) for the ERC20 tokens being spent in the router data. Users are required to sign this data. The `permitData` and the associated signature are then sent to the Protocolink API as part of the transaction.
+
+The `approve` method provides users with the necessary transactions to approve the expenditure of ERC20 tokens in the router data. Users must complete these approval transactions before sending the router transaction.
+
 ```javascript
-const getEstimateResult = async (chainId, account, logics) => {
-    const result = await client.post('/v1/transactions?isEstimate=true', {
+const getEstimateResult = async (chainId, account, logics, permit2Type) => {
+    const result = await client.post(
+    `/v1/transactions/estimate?permit2Type=${permit2Type}`, {
         body: {
             chainId: chainId,
             account: account,
