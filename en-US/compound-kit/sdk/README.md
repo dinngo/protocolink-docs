@@ -75,6 +75,7 @@ const marketInfo = await compoundkit.getMarketInfo(chainId, marketId, account);
 //     "name": "USD Coin (PoS)"
 //   },
 //   "baseTokenPrice": "0.999956",
+//   "baseBorrowMin": "100",
 //   "supplyAPR": "0.034",
 //   "supplyBalance": "0",
 //   "supplyUSD": "0",
