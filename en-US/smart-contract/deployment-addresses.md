@@ -6,7 +6,7 @@ All addresses have been deployed for testing purposes and have not yet been audi
 
 ## Ethereum, Polygon, Arbitrum
 
-<table data-full-width="false"><thead><tr><th width="288">Contract</th><th width="567">Address</th></tr></thead><tbody><tr><td>Router</td><td>0x4E744c3E6973D34ee130B7E668Abc14CD49ca16e</td></tr><tr><td>AgentImplementation</td><td>0x8a3C196b23E4eAB6e9f9e4e488E9591066732797</td></tr><tr><td>AaveV2FlashLoanCallback<br>(Only Ethereum, Polygon)</td><td>0xD1CA91bE788372275FB0FfC876465Bc0a5A31F86</td></tr><tr><td>AaveV3FlashLoanCallback</td><td>0x8f2Ed9cE5DF73210c5Fa21d0cFDFF98bB1027a1F</td></tr><tr><td>BalancerV2FlashLoanCallback</td><td>0x13431cd779FD770D55701B96F2675dFF63BDD756</td></tr><tr><td>RadiantV2FlashLoanCallback<br>(Only Arbitrum)</td><td>0xC1a22F8A12F4D42D6f2C645fc87bB896A4f150c8</td></tr><tr><td>CREATE3Factory</td><td>0xB9504E656866cCB985Aa3f1Af7b8B886f8485Df6</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="288">Contract</th><th width="567">Address</th></tr></thead><tbody><tr><td>Router</td><td>0x3fa3B62F0c9c13733245A778DE4157E47Cf5bA21</td></tr><tr><td>AgentImplementation</td><td>0x903847853d5fE12BaC24dD85903190528CF6070b</td></tr><tr><td>AaveV2FlashLoanCallback<br>(Only Ethereum, Polygon)</td><td>0x27BfAC5fb25C3853C2F48cF0e5B2F89Ea03C0104</td></tr><tr><td>AaveV3FlashLoanCallback</td><td>0x6ea614B4C520c8abC9B0F50803Bef964D4DA81EB</td></tr><tr><td>BalancerV2FlashLoanCallback</td><td>0x08b3d2c773C08CF21746Cf16268d2E092881c208</td></tr><tr><td>RadiantV2FlashLoanCallback<br>(Only Arbitrum)</td><td>0x8629F6769f072FDFCDF0c1c040708b6FfAa58E5c</td></tr><tr><td>CREATE3Factory</td><td>0xB9504E656866cCB985Aa3f1Af7b8B886f8485Df6</td></tr></tbody></table>
 
 ## zkSync Era
 
