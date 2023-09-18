@@ -10,5 +10,5 @@ All addresses have been deployed for testing purposes and have not yet been audi
 
 ## zkSync Era
 
-<table><thead><tr><th width="289">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Router</td><td>0xcfBdd89768f16125b48eE3FcD2BAb902ce0C447f</td></tr><tr><td>AgentImplementation</td><td>0xB4d14eA72b7Df945e57724336b50C4267E59a4EB</td></tr></tbody></table>
+<table><thead><tr><th width="289">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Router</td><td>0xa8350893B36e0425B50917125d9603F81F2D3C87</td></tr><tr><td>AgentImplementation</td><td>0x1f4f87CDf642bAfD106fa42Ae327f5bAE7ab8F02</td></tr></tbody></table>
 
