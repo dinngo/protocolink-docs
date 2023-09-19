@@ -57,6 +57,7 @@
   * [Utility](smart-contract/overview/utility.md)
   * [ERC721/ERC1155 Support](smart-contract/overview/erc721-erc1155-support.md)
 * [📑 Deployment Addresses](smart-contract/deployment-addresses.md)
+* [🧑💻 Security Review Details](smart-contract/security-review-details.md)
 
 ## COMPOUND KIT
 

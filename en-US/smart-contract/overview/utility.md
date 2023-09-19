@@ -1,11 +1,9 @@
 ---
-description: This can be called by the Agent to perform additional actions.
+description: The extensions for Agent to perform extra actions
 ---
 
 # Utility
 
-In order to handle special operations that cannot be directly performed by the Agent, such as creating a `CDP` on `Maker`, it is necessary to complete these operations before proceeding with subsequent steps on this `CDP`.
+In order to do specific operations (e.g., creating a CDP on the [Maker Protocol](https://docs.makerdao.com/)) that cannot be handled directly by `Agent`, Protocolink provides the **Utility**. Now, users are able to do `openLockETHAndDraw()` and `openLockGemAndDraw()` operations on their Agent thanks to the **MakerUtility.**
 
-&#x20;Therefore we have established a **utility** contract specifically designed to handle such special operations to assist users in using Protocolink with more flexibility. Users can interact directly with the **MakerUtility** contract via Agent to complete the `openLockETHAndDraw()` and `openLockGemAndDraw()` operations.
-
-<figure><img src="../../.gitbook/assets/MakerUtility.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MakerUtility.png" alt=""><figcaption><p>Utility Call Flow</p></figcaption></figure>
