@@ -1,9 +1,8 @@
 # 🧑💻 Security Review Details
 
-GitHub Repository: [https://github.com/dinngo/protocolink-contract](https://github.com/dinngo/protocolink-contract)
-
 ## Scope
 
+* GitHub Repository: [https://github.com/dinngo/protocolink-contract](https://github.com/dinngo/protocolink-contract)
 * `src/` (except for `src/interfaces/`)
 
 ## Contract Details
