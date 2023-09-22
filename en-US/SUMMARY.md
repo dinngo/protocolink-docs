@@ -39,6 +39,7 @@
   * [Balancer V2](integrate-js-sdk/api-sdk-interfaces/balancer-v2.md)
   * [Compound V3](integrate-js-sdk/api-sdk-interfaces/compound-v3.md)
   * [ParaSwap V5](integrate-js-sdk/api-sdk-interfaces/paraswap-v5.md)
+  * [SyncSwap](integrate-js-sdk/api-sdk-interfaces/syncswap.md)
   * [Uniswap V3](integrate-js-sdk/api-sdk-interfaces/uniswap-v3.md)
   * [Utility](integrate-js-sdk/api-sdk-interfaces/utility.md)
 * [⚒ Common SDK Interfaces](integrate-js-sdk/common-sdk-interfaces/README.md)
