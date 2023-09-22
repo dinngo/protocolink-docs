@@ -1,28 +1,38 @@
 # Request Transaction Data
 
+
+
 {% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml" path="/v1/transactions/build" method="post" %}
 [https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml](https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml)
 {% endswagger %}
 
 Provides the transaction request that needs to be sent, comprising the Router contract `address` (to), transaction `data` (data), and the amount of ETH to be carried in the transaction (value).
 
-<pre class="language-javascript"><code class="lang-javascript">const getRouterTransactionRequest = async (chainId, account, logics) => {
-    const result = await client.post('/v1/transactions/build', {
-        body: {
-            chainId: chainId,
-            account: account,
-            logics: logics,
-        }
-<strong>    });
-</strong>    return result.data;
-}
+```javascript
+const getRouterTransactionRequest = async (routerData) => {
+  const result = await client.post("/v1/transactions/build", { body: routerData });
+  return result.data;
+};
 
-const chainId = 1;
-const account = USER_ADDRESS;
-const logics = [swapLogic, supplyLogic];
+const routerData = {
+  chainId: 1,
+  account: USER_ADDRESS,
+  logics: [swapLogic, supplyLogic],
+  // If the estimate result returns permitData, the user should sign the permitData,
+  // and return the signed permitSig along with it.
+  permitData: permitData,
+  permitSig: permitSig,
+  // If there is only one referral address, you can use the 'referral' property.
+  // If there are multiple referral addresses, use 'referrals' and specify the rates accordingly.
+  referral: collector,
+  referrals: [
+    { collector: collector, rate: 5000 },
+    ...
+  ]
+};
 
-const transactionRequest = await getRouterTransactionRequest(chainId, account, logics);
-</code></pre>
+const transactionRequest = await getRouterTransactionRequest(routerData);
+```
 
 The result contains a list of chains that looks the following:
 
@@ -34,3 +44,4 @@ The result contains a list of chains that looks the following:
 }
 ```
 
+For more information on the **routerData** object and its properties, please refer to the [**Router Data Documentation**](../../integrate-js-sdk/api-sdk-interfaces/global-types.md#routerdata).

@@ -25,7 +25,8 @@ interface RouterData {
   logics: Logic[];
   permitData?: PermitSingleData | PermitBatchData;
   permitSig?: string;
-  referralCode?: number;
+  referral?: string;
+  referrals?: { collector: string; rate: number }[];
 }
 ```
 
@@ -36,4 +37,10 @@ The `RouterData` interface represents the data required to execute a router tran
 * **logics**: The Logics data.
 * **permitData(optional)**: The permit data required for the transaction.
 * **permitSig(optional)**: The signature of the permit data.
-* **referralCode(optional)**: The code provided when applying to be a partner.
+* **referral(optional)**: This property represents the address to which fees are sent when conducting on-chain fee-sharing.
+*   **referrals(optional)**: This property is used when you want to distribute fees to multiple addresses. It is an array of objects, where each object has two attributes:
+
+    * `collector`: This is the address where a portion of the proceeds will be sent.
+    * `rate`: The `rate` parameter represents the percentage allocation of fees to a particular `collector`. It is an integer value ranging from 1 to 10,000, where 1 represents 0.01%, and 10,000 represents 100%. The sum of all `rate` values within the `referrals` array should equal 10,000 to ensure that the entire fee amount is correctly distributed among the specified collectors.
+
+    \
