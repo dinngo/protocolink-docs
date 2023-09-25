@@ -16,6 +16,8 @@ The structure of the transactionRequest obtained is roughly as follows:
 }
 ```
 
+For more information on the **routerData** object and its properties, please refer to the [**Router Data Documentation**](../api-sdk-interfaces/global-types.md#routerdata).
+
 This is the Router transaction to be sent next. If you're using `ethers` package, you can refer to the code example to send the transaction:
 
 ```typescript
