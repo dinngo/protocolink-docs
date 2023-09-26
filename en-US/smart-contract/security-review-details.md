@@ -2,8 +2,18 @@
 
 ## Scope
 
-* GitHub Repository: [https://github.com/dinngo/protocolink-contract](https://github.com/dinngo/protocolink-contract)
-* `src/` (except for `src/interfaces/`)
+* [GitHub Repository](https://github.com/dinngo/protocolink-contract)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/Agent.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/Agent.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/AgentImplementation.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/AgentImplementation.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/Router.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/Router.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/CallbackFeeBase.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/CallbackFeeBase.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/BalancerV2FlashLoanCallback.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/BalancerV2FlashLoanCallback.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/ApproveHelper.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/ApproveHelper.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/CallbackLibrary.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/CallbackLibrary.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/DataType.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/DataType.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/Delegation.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/Delegation.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/FeeLibrary.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/FeeLibrary.sol)
+* [https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/TypedDataHash.sol](https://github.com/dinngo/protocolink-contract/blob/master/src/libraries/TypedDataHash.sol)
 
 ## Contract Details
 
