@@ -4,16 +4,17 @@ description: The entry point for protocol callbacks to reenter an Agent in a tra
 
 # Callback
 
-Protocolink blocks reentrancy while executing transactions. However, this stops Protocolink from supporting flash loan protocols. To support flash loan protocols without sacrificing security, Protocolink employs the `Callback` which is explained below.
+Protocolink blocks reentrancy in the middle of a transaction for security reasons. However, blocking reentrancy stops Protocolink from supporting flash loan protocols. To support them without sacrificing security, Protocolink employs the Callback which is shown below.
 
-<figure><img src="../../.gitbook/assets/callbacks (2).png" alt=""><figcaption><p>Callback Flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/callbacks (2).png" alt=""><figcaption><p>Callback Call Flow</p></figcaption></figure>
 
-To borrow a flash loan, borrowers need to provide a receiver address to the flash loan service. For Protocolink users, we provide stateless and secured callbacks specifically for this purpose. Users need to provide the callback address in the `callback` field of the [DataType.Logic](router.md#datatype.logic) when executing a transaction.
+The Callback plays the receiver role to flash loan services. When users try to borrow a flash loan within Protocolink, they must provide the corresponding callback address in the [callback field](https://github.com/dinngo/protocolink-contract/blob/4b765ea9da53fc02b4bce890676cf080206fd00e/src/libraries/DataType.sol#L26).
 
-Currently, Protocolink provides the following callbacks to support flash loan services:
+Currently, the supported callbacks are:
 
-* [FlashLoanCallbackAaveV2](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/AaveV2FlashLoanCallback.sol)
-* [FlashLoanCallbackAaveV3](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/AaveV3FlashLoanCallback.sol)
-* [FlashLoanCallbackBalancerV2](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/BalancerV2FlashLoanCallback.sol)
+* [AaveV2FlashLoanCallback](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/AaveV2FlashLoanCallback.sol)
+* [AaveV3FlashLoanCallback](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/AaveV3FlashLoanCallback.sol)
+* [BalancerV2FlashLoanCallback](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/BalancerV2FlashLoanCallback.sol)
+* [RadiantV2FlashLoanCallback](https://github.com/dinngo/protocolink-contract/blob/master/src/callbacks/RadiantV2FlashLoanCallback.sol)
 
-You can check how to use the AaveV2 callback in this [example](https://github.com/dinngo/protocolink-contract/blob/cba23729be7acb7fd41e72d22d6652e03f34bdc2/test/integration/AaveV2.t.sol#L126).
+Check how the AaveV2 callback is used in this [example](https://github.com/dinngo/protocolink-contract/blob/cba23729be7acb7fd41e72d22d6652e03f34bdc2/test/integration/AaveV2.t.sol#L126).

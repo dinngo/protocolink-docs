@@ -1,16 +1,48 @@
 ---
 description: >-
-  The execution unit of user transactions. Agent securely holds token approvals
-  for its exclusive user, and Agent is non-upgradable.
+  The execution unit of user transactions. The Agent securely holds token
+  approvals for its exclusive user, and it is non-upgradable.
 ---
 
 # Agent
 
-In Protocolink, an `Agent` is dedicated to a user. When a user conducts a transaction for the first time, the `Router` checks whether the corresponding `Agent` exists. If not, a new `Agent` is created in the user's first transaction, eliminating the need for the user to initiate another transaction to set up the `Agent`. This design reduces the risk of placing token approvals on a shared `Agent`.
+#### Create a New Agent
+
+In Protocolink, one Agent is dedicated to one user. When a user conducts the very first transaction, the Router checks whether the corresponding Agent exists. If the Agent does not exist, the Router creates a new one in the transaction, eliminating the need to create it in another transaction.
+
+```solidity
+function _execute(
+    address user,
+    bytes[] calldata permit2Datas,
+    DataType.Logic[] calldata logics,
+    address[] calldata tokensReturn
+) internal {
+    IAgent agent = agents[user];
+
+    if (address(agent) == address(0)) {
+        agent = IAgent(_newAgent(user));
+    }
+
+    emit Executed(user, address(agent));
+    agent.execute{value: msg.value}(permit2Datas, logics, tokensReturn);
+}
+
+```
+
+When creating an Agent, the Router requires the user address as salt and saves the relation between the user and the Agent in the map. By having a dedicated Agent, users no longer need to worry about the risk of placing token approvals on a shared one.
+
+```solidity
+function _newAgent(address user) internal returns (address) {
+    IAgent agent = IAgent(address(new Agent{salt: bytes32(bytes20(user))}(agentImplementation)));
+    agents[user] = agent;
+    emit AgentCreated(address(agent), user);
+    return address(agent);
+}
+```
 
 #### Grant Agent Permissions
 
-In certain scenarios, users need to grant their `Agent` certain permissions, such as setting token allowances in [Permit2](https://github.com/Uniswap/permit2), before they send transactions.
+In certain scenarios, users must grant their Agent certain permissions, such as setting token allowances in Permit2 before sending transactions.
 
 #### Calculate Agent Address
 
@@ -36,6 +68,4 @@ function calcAgent(address user) external view returns (address) {
 }
 ```
 
-This function utilizes the [CREATE2](https://eips.ethereum.org/EIPS/eip-1014) opcode. The parameter is explained below:
-
-* user: An address that is used to query the corresponding `Agent` address.
+This function utilizes the [CREATE2](https://eips.ethereum.org/EIPS/eip-1014) opcode. It requires a user address that is used to query the corresponding `Agent` address.
