@@ -1,7 +1,7 @@
 # Estimate Logics Result
 
-{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml" path="/v1/transactions/estimate" method="post" %}
-[https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml](https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml)
+{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json" path="/v1/transactions/estimate" method="post" %}
+[https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json](https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json)
 {% endswagger %}
 
 Estimates of how much funds will be spent (**funds**) and how many balances will be obtained (**balances**) from this transaction. It will also identify any approvals that the user needs to execute (**approvals**) before the transaction and whether there is any Permit2 data that the user needs to sign before proceeding (**permitData**).

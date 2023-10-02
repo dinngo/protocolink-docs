@@ -1,7 +1,7 @@
 # Request Quote
 
-{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml" path="/v1/protocols/{chainId}/{protocolId}/{logicId}/quote" method="post" %}
-[https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml](https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml)
+{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json" path="/v1/protocols/{chainId}/{protocolId}/{logicId}/quote" method="post" %}
+[https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json](https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json)
 {% endswagger %}
 
 Provides quote of a Logic, depending on the chain and protocol. See [networks-and-protocols.md](../../networks-and-protocols.md "mention").

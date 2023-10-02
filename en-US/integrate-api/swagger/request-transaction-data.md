@@ -2,8 +2,8 @@
 
 
 
-{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml" path="/v1/transactions/build" method="post" %}
-[https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml](https://api.swaggerhub.com/apis/dinngodev/Protocolink/0.3.0/swagger.yaml)
+{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json" path="/v1/transactions/build" method="post" %}
+[https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json](https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json)
 {% endswagger %}
 
 Provides the transaction request that needs to be sent, comprising the Router contract `address` (to), transaction `data` (data), and the amount of ETH to be carried in the transaction (value).
