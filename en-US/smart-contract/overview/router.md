@@ -27,12 +27,12 @@ The [`execute()`](https://github.com/dinngo/protocolink-contract/blob/c8743edc49
 {% hint style="info" %}
 Native tokens should be sent by users to the Router in `msg.value.`
 
-Protocolink charges fees in the execute() function. Check more details of the [fees](https://app.gitbook.com/o/-MJ0tv29EsBtmEHq0z5Q/s/HuiitAfgh7HXRqRn5di2/\~/changes/125/smart-contract/overview/fees/\~/comments/h16VDcHLhjgkrV4eiO81?node=cd3366d008e94f3ebe63cec91cdf9813).
+Protocolink charges fees in the execute() function. Check more details of the [fees.md](fees.md "mention")
 {% endhint %}
 
 ### **Execute Transactions with API Data**
 
-Though Protocolink provides the [execute() function](router.md#execute-transactions) for users to operate protocols in a single transaction, it would take users a bunch of time to build the parameters. To solve this issue, Protocolink provides the `executeWithSignerFee()` function.
+Though Protocolink provides the [#execute-transactions](router.md#execute-transactions "mention") for users to operate protocols in a single transaction, it would take users a bunch of time to build the parameters. To solve this issue, Protocolink provides the `executeWithSignerFee()` function.
 
 ```solidity
 function executeWithSignerFee(
@@ -44,7 +44,7 @@ function executeWithSignerFee(
 ) external payable {}
 ```
 
-The [`executeWithSignerFee()`](https://github.com/dinngo/protocolink-contract/blob/c8743edc492bf7a25bbc8a0f55befb148e687a38/src/AgentImplementation.sol#L96) function serves as the core interface for users to execute transactions with [Protocolink API ](broken-reference)data. It requires five parameters:
+The [`executeWithSignerFee()`](https://github.com/dinngo/protocolink-contract/blob/c8743edc492bf7a25bbc8a0f55befb148e687a38/src/AgentImplementation.sol#L96) function serves as the core interface for users to execute transactions with Protocolink API data. It requires five parameters:
 
 * **`permit2Datas`**: The Permit2 data for pulling tokens from the user address.
 * **`logicBatch`**: The operations for Protocolink to interact with other protocols.
@@ -53,7 +53,7 @@ The [`executeWithSignerFee()`](https://github.com/dinngo/protocolink-contract/bl
 * **`tokensReturn`**: The specified tokens should be sent back to the user address at the end of the transaction.
 
 {% hint style="info" %}
-[`logicBatch`](https://app.gitbook.com/o/-MJ0tv29EsBtmEHq0z5Q/s/HuiitAfgh7HXRqRn5di2/\~/changes/125/smart-contract/overview/data-type#logicbatch)also includes other information like fees. Check more details of the [fees](fees.md).
+The [#logicbatch](data-type.md#logicbatch "mention") also includes other information like fees. Check more details of the [fees.md](fees.md "mention").
 {% endhint %}
 
 ### Execute Transactions with Delegations
@@ -95,7 +95,7 @@ function disallow(address delegatee) external {
 
 #### With Delegations and API Data
 
-Same as [Execute Transactions with API Data](router.md#execute-transactions-with-api-data), delegatees can call the Router contract with API data by using the `executeForWithSignerFee()` function. &#x20;
+Same as [#execute-transactions-with-api-data](router.md#execute-transactions-with-api-data "mention"), delegatees can call the Router contract with API data by using the `executeForWithSignerFee()` function. &#x20;
 
 ```solidity
 function executeForWithSignerFee(
@@ -118,7 +118,7 @@ The [`executeForWithSignerFee()`](https://github.com/dinngo/protocolink-contract
 * **`tokensReturn`**: The specified tokens should be sent back to the user address at the end of the transaction.
 
 {% hint style="info" %}
-[`logicBatch`](https://app.gitbook.com/o/-MJ0tv29EsBtmEHq0z5Q/s/HuiitAfgh7HXRqRn5di2/\~/changes/125/smart-contract/overview/data-type#logicbatch) also includes other information like `fees`. Check more details of the [fees](fees.md).
+The [#logicbatch](data-type.md#logicbatch "mention") also includes other information like `fees`. Check more details of the [fees.md](fees.md "mention").
 {% endhint %}
 
 ### Execute Transactions with Signatures
@@ -140,12 +140,12 @@ The [`executeBySig()`](https://github.com/dinngo/protocolink-contract/blob/5a243
 * **`signature`**: The hash value of the signed `logicBatch`.
 
 {% hint style="info" %}
-The [`details`](https://app.gitbook.com/o/-MJ0tv29EsBtmEHq0z5Q/s/HuiitAfgh7HXRqRn5di2/\~/changes/125/smart-contract/overview/data-type#executionbatchdetails) also includes other information like `permit2Datas.`
+The [#executiondetails](data-type.md#executiondetails "mention") also includes other information like `permit2Datas`.
 {% endhint %}
 
 #### With Signatures and API Data
 
-Same as [Execute Transactions with API Data](router.md#execute-transactions-with-api-data), anyone can call the Router contract with a signature and API data by using the `executeBySigWithSignerFee()` function.
+Same as [#execute-transactions-with-api-data](router.md#execute-transactions-with-api-data "mention"), anyone can call the Router contract with a signature and API data by using the `executeBySigWithSignerFee()` function.
 
 ```solidity
 function executeBySigWithSignerFee(
@@ -166,5 +166,5 @@ The [`executeBySigWithSignerFee()`](https://github.com/dinngo/protocolink-contra
 * **`signerSignature`**: The hash value of the signed `logicBatch`.
 
 {% hint style="info" %}
-The [`details`](https://app.gitbook.com/o/-MJ0tv29EsBtmEHq0z5Q/s/HuiitAfgh7HXRqRn5di2/\~/changes/125/smart-contract/overview/data-type#executionbatchdetails) also includes other information like `permit2Datas.`
+The [#executionbatchdetails](data-type.md#executionbatchdetails "mention") also includes other information like `permit2Datas`.
 {% endhint %}

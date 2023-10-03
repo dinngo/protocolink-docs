@@ -46,7 +46,7 @@ In certain scenarios, users must grant their Agent certain permissions, such as 
 
 #### Calculate Agent Address
 
-To grant permissions to the right `Agent`, users can use the **`calcAgent(address)`** function to obtain the `Agent` address before executing a transaction.
+To grant permissions to the right Agent, users can use the **`calcAgent(address)`** function to obtain the Agent address before executing a transaction.
 
 ```solidity
 function calcAgent(address user) external view returns (address) {
@@ -68,4 +68,4 @@ function calcAgent(address user) external view returns (address) {
 }
 ```
 
-This function utilizes the [CREATE2](https://eips.ethereum.org/EIPS/eip-1014) opcode. It requires a user address that is used to query the corresponding `Agent` address.
+This function utilizes the [CREATE2](https://eips.ethereum.org/EIPS/eip-1014) opcode. It requires a user address that is used to query the corresponding Agent address.

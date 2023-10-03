@@ -4,13 +4,13 @@ description: Protocolink charges fees based on the token amount and transaction 
 
 # Fees
 
-This page explains the fee mechanism in the Protocolink contracts. The overview fee structure can be found [here](../../fees.md).
+This page explains the fee mechanism in the Protocolink contracts. The overview fee structure can be found at [#fee-structure](../../fees.md#fee-structure "mention").
 
-Protocolink calculates the fees on-chain or off-chain depending on the user called function. When users call the Protocolink contract directly (e.g., [the `execute()` function](router.md#execute-transactions)), Protocolink calculates the fees on-chain. When users call the Protocolink contract with API data (e.g., [the `executeWithSignerFee` function](router.md#execute-transactions-with-api-data)), Protocolink charges the off-chain fee.
+Protocolink calculates the fees on-chain or off-chain depending on the user called function. When users call the Protocolink contract directly (e.g., [#execute-transactions](router.md#execute-transactions "mention")), Protocolink calculates the fees on-chain. When users call the Protocolink contract with API data (e.g., [#execute-transactions-with-api-data](router.md#execute-transactions-with-api-data "mention")), Protocolink charges the off-chain fee.
 
 ### On-Chain Fee
 
-If users call the Router contract without the API data, Protocolink will calculate and charge the on-chain fee in [the `execute()` function](router.md#execute-transactions). The on-chain fee is charged from the token amounts transferred in the transaction. For ERC-20 tokens, the on-chain fee is charged in the [`_doPermit2()`](https://github.com/dinngo/protocolink-contract/blob/4b765ea9da53fc02b4bce890676cf080206fd00e/src/AgentImplementation.sol#L138) function, and for native tokens, the on-chain fee is charged in the [`_chargeByMsgValue()`](https://github.com/dinngo/protocolink-contract/blob/4b765ea9da53fc02b4bce890676cf080206fd00e/src/AgentImplementation.sol#L293) function. Protocolink charges the fee from the Agent.
+If users call the Router contract without the API data, Protocolink will calculate and charge the on-chain fee in the `execute()` function. The on-chain fee is charged from the token amounts transferred in the transaction. For ERC-20 tokens, the on-chain fee is charged in the [`_doPermit2()`](https://github.com/dinngo/protocolink-contract/blob/4b765ea9da53fc02b4bce890676cf080206fd00e/src/AgentImplementation.sol#L138) function, and for native tokens, the on-chain fee is charged in the [`_chargeByMsgValue()`](https://github.com/dinngo/protocolink-contract/blob/4b765ea9da53fc02b4bce890676cf080206fd00e/src/AgentImplementation.sol#L293) function. Protocolink charges the fee from the Agent.
 
 ```solidity
 function execute(
@@ -30,7 +30,7 @@ Protocolink also charges the flash loan fee before returning the control flow ba
 
 ### Off-Chain Fee
 
-If users call the Router contract with API data, Protocolink will charge the off-chain fee in [the `executeWithSignerFee()` function](router.md#execute-transactions-with-api-data). The fees are calculated in Protocolink's API server off-chain and are charged by token types. If the token is an ERC-20 token, the fee is charged from the user address. If the token is a native token, the fee is charged from the Agent address.
+If users call the Router contract with API data, Protocolink will charge the off-chain fee in the `executeWithSignerFee()` function. The fees are calculated in Protocolink's API server off-chain and are charged by token types. If the token is an ERC-20 token, the fee is charged from the user address. If the token is a native token, the fee is charged from the Agent address.
 
 ```solidity
 function executeWithSignerFee(
