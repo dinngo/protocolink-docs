@@ -32,6 +32,10 @@ struct Input {
 * **`balanceBps`**: The value represents how much percentage of the token balance will be used. The base is `10_000` which means `7_000` represents 70% of the token balance. If you want to use a fixed amount instead, set this value to `0`.
 * **`amountOrOffset`**: The value represents the fixed token amount in use when `balanceBps` is set to `0`. Otherwise, it represents the byte offset for replacing the amount value in the `Logic.data`. If the amount value does not need to be replaced, set `amountOrOffset` to [`1<<255`](https://github.com/dinngo/protocolink-contract/blob/5a243c64a27b4cbae3a2ff5b8595cfcc146c6a14/src/AgentImplementation.sol#L44).
 
+{% hint style="info" %}
+Check more details at [#execute-transactions-with-balancelink](agent.md#execute-transactions-with-balancelink "mention").
+{% endhint %}
+
 #### [Logic](https://github.com/dinngo/protocolink-contract/blob/4b765ea9da53fc02b4bce890676cf080206fd00e/src/libraries/DataType.sol#L20)
 
 {% code fullWidth="false" %}
