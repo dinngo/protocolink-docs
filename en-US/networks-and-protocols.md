@@ -9,7 +9,7 @@ description: >-
 
 ## Networks
 
-<table><thead><tr><th width="97">Status</th><th width="206">Network</th><th data-type="number">Chain Id</th></tr></thead><tbody><tr><td>✅</td><td>Ethereum</td><td>1</td></tr><tr><td>✅</td><td>Polygon</td><td>137</td></tr><tr><td>✅</td><td>zkSync Era</td><td>324</td></tr><tr><td>✅</td><td>Arbitrum</td><td>42161</td></tr></tbody></table>
+<table><thead><tr><th width="97">Status</th><th width="206">Network</th><th data-type="number">Chain Id</th></tr></thead><tbody><tr><td>✅</td><td>Ethereum</td><td>1</td></tr><tr><td>✅</td><td>Optimism</td><td>10</td></tr><tr><td>✅</td><td>Polygon</td><td>137</td></tr><tr><td>✅</td><td>zkSync Era</td><td>324</td></tr><tr><td>✅</td><td>Metis</td><td>1088</td></tr><tr><td>✅</td><td>Base</td><td>8453</td></tr><tr><td>✅</td><td>Arbitrum</td><td>42161</td></tr><tr><td>✅</td><td>Avalanche</td><td>43114</td></tr></tbody></table>
 
 ## Protocols
 
