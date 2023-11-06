@@ -77,7 +77,7 @@ This endpoint offers an estimation of the amount of funds to be spent (**funds**
 
 ```javascript
 const getEstimateResult = async (chainId, account, logics) => {
-    const result = await client.post('/v1/transactions?isEstimate=true', {
+    const result = await client.post('/v1/transactions/estimate', {
         chainId: chainId,
         account: account,
         logics: logics,
@@ -108,7 +108,7 @@ You can then use the request router transaction data method to get the transacti
 
 ```javascript
 const getRouterTransactionRequest = async (chainId, account, logics) => {
-    const result = await client.post('/v1/transactions', {
+    const result = await client.post('/v1/transactions/build', {
         chainId: chainId,
         account: account,
         logics: logics,
