@@ -84,7 +84,7 @@ interface SwapTokenLogic {
 ### Functions
 
 * **getSwapTokenTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the SyncSwap swap token logic on the specified `chainId`.
-* **getSwapTokenQuotation(chainId: number, params: SwapTokenParams)**: An asynchronous function that retrieves a quotation for swaping assets on the SyncSwap protocol with the specified `params` object on the specified `chainId`.
+* **getSwapTokenQuotation(chainId: number, params: SwapTokenParams)**: An asynchronous function that retrieves a quotation for swapping assets on the SyncSwap protocol with the specified `params` object on the specified `chainId`.
 * **newSwapTokenLogic(fields: SwapTokenFields)**: A function that creates the SyncSwap swap token logic data with the given `fields` object.
 
 ### Example Code
