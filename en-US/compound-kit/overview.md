@@ -1,9 +1,5 @@
 # 🔮 Overview
 
-{% hint style="info" %}
-The Compound Kit is currently in testing phase. We welcome your feedback, and if you have any questions or concerns, please feel free to reach out to us.
-{% endhint %}
-
 ## Introduction to Compound Kit
 
 The Compound Kit is an open source SDK/API which empowers developers to rapidly build intent-centric applications and enhance the user experience with the Compound protocol.

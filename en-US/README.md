@@ -8,7 +8,7 @@ description: >-
 # 🔮 Overview
 
 {% hint style="info" %}
-Protocolink is currently in testing phase. We welcome your feedback, and if you have any questions or concerns, please feel free to reach out to us on our [Discord](https://discord.furucombo.app/).
+We welcome your feedback, and if you have any questions or concerns, please feel free to reach out to us on our [Discord](https://discord.furucombo.app/).
 {% endhint %}
 
 ## Architecture Diagram
