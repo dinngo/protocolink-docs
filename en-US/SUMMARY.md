@@ -9,7 +9,7 @@
   * [Position Management](use-cases/position-management.md)
   * [Multi-Action Bundling](use-cases/multi-action-bundling.md)
 * [📋 Networks & Protocols](networks-and-protocols.md)
-* [🛡 Security](security.md)
+* [🛡 Security & Audits](security-and-audits.md)
 * [💎 Fees](fees.md)
 * [❓ FAQ](faq.md)
 
@@ -61,8 +61,8 @@
   * [Utility](smart-contract/overview/utility.md)
   * [Data Type](smart-contract/overview/data-type.md)
   * [ERC721/ERC1155 Support](smart-contract/overview/erc721-erc1155-support.md)
-* [🧑💻 Security Review Details](smart-contract/security-review-details.md)
 * [📑 Deployment Addresses](smart-contract/deployment-addresses.md)
+* [🧑💻 Security Review Details](smart-contract/security-review-details.md)
 
 ## COMPOUND KIT
 
