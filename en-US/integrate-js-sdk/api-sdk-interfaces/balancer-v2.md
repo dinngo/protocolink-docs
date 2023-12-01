@@ -1,8 +1,8 @@
 # Balancer V2
 
-In this section, we will introduce the Balancer V2 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Balancer V2 protocol. These interfaces cover various aspects of the protocol, including flash loan, and are designed to be easy to use and flexible.
+In this section, we will introduce the Balancer V2 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Balancer V2 protocol. These interfaces are related to flash loan, and are designed to be used easily and flexibly.
 
-In the following section, we will introduce the interfaces related to the Balancer V2 protocol, which can be accessed through the `api.protocols.balancerv2.` prefix.
+The following section will introduce the interfaces related to the Balancer V2 protocol, which can be accessed through the `api.protocols.balancerv2.` prefix.
 
 ## FlashLoan
 

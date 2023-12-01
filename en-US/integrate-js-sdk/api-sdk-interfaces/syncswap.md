@@ -1,8 +1,8 @@
 # SyncSwap
 
-In this section, we will introduce the SyncSwap SDK interfaces, which provide developers with a convenient and efficient way to interact with the SyncSwap protocol. These interfaces cover various aspects of the protocol, including swap token and are designed to be easy to use and flexible.
+In this section, we will introduce the SyncSwap SDK interfaces, which provide developers with a convenient and efficient way to interact with the SyncSwap protocol. These interfaces are related to swap token and are designed to be used easily and flexibly.
 
-In the following section, we will introduce the interfaces related to the SyncSwap protocol, which can be accessed through the `api.protocols.syncswap.` prefix.
+The following section will introduce the interfaces related to the SyncSwap protocol, which can be accessed through the `api.protocols.syncswap.` prefix.
 
 ## SwapToken
 

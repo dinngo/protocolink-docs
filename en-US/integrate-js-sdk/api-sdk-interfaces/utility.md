@@ -2,7 +2,7 @@
 
 In this section, we will cover the functionalities provided by our Utility logics, which includes FlashLoan Aggregator, Multi Send, Send Token, and Wrapped Native Token. These logics are designed to make common operations more streamlined and efficient for developers. Whether you're building a dApp or working on a complex project, our Utility logics can help you save time and improve your workflow.
 
-In the following section, we will introduce the interfaces of Utility logics, which can be accessed through the `api.protocols.utility.` prefix.
+The following section will introduce the interfaces of Utility logics, which can be accessed through the `api.protocols.utility.` prefix.
 
 ## FlashLoan Aggregator
 

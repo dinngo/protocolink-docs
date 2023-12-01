@@ -1,8 +1,8 @@
 # Uniswap V3
 
-In this section, we will introduce the Uniswap V3 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Uniswap V3 protocol. These interfaces cover various aspects of the protocol, including swap token and are designed to be easy to use and flexible.
+In this section, we will introduce the Uniswap V3 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Uniswap V3 protocol. These interfaces are related to swap token and are designed to be used easily and flexibly.
 
-In the following section, we will introduce the interfaces related to the Uniswap V3 protocol, which can be accessed through the `api.protocols.uniswapv3.` prefix.
+The following section will introduce the interfaces related to the Uniswap V3 protocol, which can be accessed through the `api.protocols.uniswapv3.` prefix.
 
 ## SwapToken
 

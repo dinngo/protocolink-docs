@@ -1,6 +1,6 @@
 # Compound V3
 
-In this section, we will introduce the Compound V3 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Compound V3 protocol. These interfaces cover various aspects of the protocol, including supply, withdraw, borrow, repay, and claim, and are designed to be easy to use and flexible.
+In this section, we will introduce the Compound V3 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Compound V3 protocol. These interfaces cover various aspects of the protocol, including supply, withdraw, borrow, repay, and claim. They are designed to be used easily and flexibly.
 
 Before we dive into the SDK interfaces, we would like to provide an overview of the features of Compound V3. If you are already familiar with Compound V3, feel free to skip this section. For those who are new to Compound V3, here's a brief explanation:
 
@@ -13,7 +13,7 @@ Once you have identified the market you want to interact with, you can choose to
 
 Please note that Compound V3 is subject to change and improvements, and we will update our SDK accordingly.
 
-In the following section, we will introduce the interfaces related to the Compound V3 protocol, which can be accessed through the `api.protocols.compoundv3.` prefix.
+The following section will introduce the interfaces related to the Compound V3 protocol, which can be accessed through the `api.protocols.compoundv3.` prefix.
 
 ## SupplyBase
 

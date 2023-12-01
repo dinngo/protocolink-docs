@@ -1,8 +1,8 @@
 # Radiant V2
 
-In this section, we will introduce the Radiant V2 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Radiant V2 protocol. These interfaces cover various aspects of the protocol, including deposit, withdraw, borrow, repay, and flash loan, and are designed to be easy to use and flexible.
+In this section, we will introduce the Radiant V2 SDK interfaces, which provide developers with a convenient and efficient way to interact with the Radiant V2 protocol. These interfaces cover various aspects of the protocol, including deposit, withdraw, borrow, repay, and flash loan. They are designed to be used easily and flexibly.
 
-In the following section, we will introduce the interfaces related to the Radiant V2 protocol, which can be accessed through the `api.protocols.radiantv2.` prefix.
+The following section will introduce the interfaces related to the Radiant V2 protocol, which can be accessed through the `api.protocols.radiantv2.` prefix.
 
 ## Deposit
 
