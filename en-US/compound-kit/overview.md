@@ -2,7 +2,7 @@
 
 ## Introduction to Compound Kit
 
-The Compound Kit is an open source SDK/API which empowers developers to rapidly build intent-centric applications and enhance the user experience with the Compound protocol.
+The Compound Kit is an open source SDK/API which empowers developers to rapidly build robust and elastic applications that enhance the user experience with the Compound protocol.
 
 Building an application on top of the Compound Protocol can be a challenging and time-consuming process. This is due to the inherent risks associated with working with smart contracts, as well as the complex calculations and encoding required for various intents, such as leverage, deleverage, collateral swap, and zaps.
 
