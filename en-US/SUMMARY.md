@@ -81,5 +81,5 @@
 
 ## Social medias
 
-* [Twitter](https://twitter.com/furucombo)
-* [Discord](https://discord.gg/JuamDaq)
+* [Twitter](https://twitter.com/protocolink)
+* [Discord](https://discord.com/invite/hv5BbbVZes)
