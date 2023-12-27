@@ -82,4 +82,4 @@
 ## Social medias
 
 * [Twitter](https://twitter.com/protocolink)
-* [Discord](https://discord.gg/furucombo-518722025095954434)
+* [Discord](https://discord.furucombo.app)
