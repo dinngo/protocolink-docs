@@ -1,8 +1,8 @@
 ---
 description: >-
-  Protocolink is an infrastructural solution that enables developers to link the
-  potential of Web3 using the most elastic SDK - all without requiring smart
-  contract coding.
+  Protocolink is an infrastructural solution, enabling developers to build
+  intent-centric apps across various protocols, without dealing with smart
+  contracts.
 ---
 
 # 🔮 Overview

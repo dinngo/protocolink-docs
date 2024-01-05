@@ -66,6 +66,20 @@
 * [📑 Deployment Addresses](smart-contract/deployment-addresses.md)
 * [🧑💻 Security Review Details](smart-contract/security-review-details.md)
 
+## Lending SDK
+
+* [🔮 Overview](lending-sdk/overview.md)
+* [✳ SDK](lending-sdk/sdk/README.md)
+  * [Leverage long](lending-sdk/sdk/leverage-long.md)
+  * [Leverage short](lending-sdk/sdk/leverage-short.md)
+  * [Deleverage](lending-sdk/sdk/deleverage.md)
+  * [Collateral swap](lending-sdk/sdk/collateral-swap.md)
+  * [Debt swap](lending-sdk/sdk/debt-swap.md)
+  * [Zap supply](lending-sdk/sdk/zap-supply.md)
+  * [Zap withdraw](lending-sdk/sdk/zap-withdraw.md)
+  * [Zap repay](lending-sdk/sdk/zap-repay.md)
+  * [Zap borrow](lending-sdk/sdk/zap-borrow.md)
+
 ## COMPOUND KIT
 
 * [🔮 Overview](compound-kit/overview.md)

@@ -9,7 +9,8 @@ description: >-
 
 Current use cases include:
 
-* [Broken link](broken-reference "mention"): features such as leverage, deleverage, collateral swap, and zaps.
+* [Broken link](broken-reference "mention"): supports mainstream lending protocols such as aave, compound, radiant, spark etc, and features such as leverage, deleverage, collateral swap, and zaps.
+* [Broken link](broken-reference "mention"): supports compound v3 and features such as leverage, deleverage, collateral swap, and zaps.
 
 Potential use cases include:
 
