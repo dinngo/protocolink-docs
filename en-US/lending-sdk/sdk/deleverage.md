@@ -2,7 +2,7 @@
 
 Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
 
-Leverage long enables user to reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
+Deleverage enables user to reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
 
 * Source token: the debt token.
 * Destination token: the collateral token.

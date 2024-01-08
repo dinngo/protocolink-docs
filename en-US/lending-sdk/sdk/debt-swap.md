@@ -2,7 +2,7 @@
 
 Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
 
-Debt swap enables user to replace one loan asset with another in a single step using a flash loan..
+Debt swap enables user to replace one loan asset with another in a single step using a flash loan.
 
 * Source token: the debt to be swapped.
 * Destination token: the debt to be swapped to.
