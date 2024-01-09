@@ -38,6 +38,7 @@
   * [Aave V3](integrate-js-sdk/api-sdk-interfaces/aave-v3.md)
   * [Balancer V2](integrate-js-sdk/api-sdk-interfaces/balancer-v2.md)
   * [Compound V3](integrate-js-sdk/api-sdk-interfaces/compound-v3.md)
+  * [Morphoblue](integrate-js-sdk/api-sdk-interfaces/morphoblue.md)
   * [OpenOcean V2](integrate-js-sdk/api-sdk-interfaces/openocean-v2.md)
   * [ParaSwap V5](integrate-js-sdk/api-sdk-interfaces/paraswap-v5.md)
   * [Permit2](integrate-js-sdk/api-sdk-interfaces/permit2.md)

@@ -280,8 +280,7 @@ The following code defines interfaces and functions related to the Compound V3 w
 
 * **WithdrawCollateralFields**: A type that represents the fields required for the Compound V3 withdraw collateral logic.
 
-```typescript
-interface WithdrawCollateralFields {
+<pre class="language-typescript"><code class="lang-typescript">interface WithdrawCollateralFields {
   marketId: string;
   input: {
     token: {
@@ -291,10 +290,10 @@ interface WithdrawCollateralFields {
       symbol: string;
       name: string;
     };
-    amount: string;
-  };
+<strong>    amount: string;
+</strong>  };
 }
-```
+</code></pre>
 
 * **WithdrawCollateralLogic**: An interface that extends the `Logic` interface and represents the Compound V3 withdraw collateral logic. It includes the `rid`, and `fields` properties.
 
@@ -355,7 +354,7 @@ interface BorrowFields {
 }
 ```
 
-* **BorrowCollateralLogic**: An interface that extends the `Logic` interface and represents the Compound V3 borrow logic. It includes the `rid`, and `fields` properties.
+* **BorrowLogic**: An interface that extends the `Logic` interface and represents the Compound V3 borrow logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface BorrowLogic {
@@ -442,7 +441,7 @@ interface RepayLogic {
 
 ### Functions
 
-* **getRepayTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Compound V3 withdraw base logic on the specified `chainId`.
+* **getRepayTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Compound V3 repay logic on the specified `chainId`.
 * **getRepayQuotation(chainId: number, params: RepayParams)**: An asynchronous function that retrieves a quotation for repaying a loan on the Compound V3 protocol with the specified `params` object on the specified `chainId`.
 * **newRepayLogic(fields: RepayFields)**: A function that creates the Compound V3 repay logic data with the given `fields` object.
 
