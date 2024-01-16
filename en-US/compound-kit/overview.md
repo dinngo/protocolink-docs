@@ -1,5 +1,9 @@
 # 🔮 Overview
 
+{% hint style="info" %}
+For a more comprehensive protocol support and enhanced position and market information, we recommend using the [Broken link](broken-reference "mention").
+{% endhint %}
+
 ## Introduction to Compound Kit
 
 The Compound Kit is an open source SDK/API which empowers developers to rapidly build robust and elastic applications that enhance the user experience with the Compound protocol.
