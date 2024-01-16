@@ -164,7 +164,7 @@ const marketInfo = await compoundkit.getMarketInfo(chainId, marketId, account);
 // }
 ```
 
-## 4. Select an Intent
+## 4. Select an use case
 
 * [Leverage](leverage.md): achieve the desired collateral exposure in a single step using a flash loan.
 * [Deleverage](deleverage.md): reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
@@ -174,4 +174,4 @@ const marketInfo = await compoundkit.getMarketInfo(chainId, marketId, account);
 * [Zap Repay](zap-repay.md): swap any token to repay as base token in one transaction.
 * [Zap Borrow](zap-borrow.md): borrow the base token, then swap to any token in one transaction.
 
-Depending on the selected intent, users will need to input different parameters, and the SDK will generate the expected outcome. If users are satisfied with the expected outcome and the fees, they can sign and submit the approval and transaction data. Typically, the approval is a one-time requirement for allowing Protocolink to act as a manager or a Permit2 token approval (which poses no risk as each user has their own agent within Protocolink - for further details, please visit [Broken link](broken-reference "mention")).
+Depending on the selected use cases, users will need to input different parameters, and the SDK will generate the expected outcome. If users are satisfied with the expected outcome and the fees, they can sign and submit the approval and transaction data. Typically, the approval is a one-time requirement for allowing Protocolink to act as a manager or a Permit2 token approval (which poses no risk as each user has their own agent within Protocolink - for further details, please visit [Broken link](broken-reference "mention")).

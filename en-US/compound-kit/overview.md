@@ -4,9 +4,9 @@
 
 The Compound Kit is an open source SDK/API which empowers developers to rapidly build robust and elastic applications that enhance the user experience with the Compound protocol.
 
-Building an application on top of the Compound Protocol can be a challenging and time-consuming process. This is due to the inherent risks associated with working with smart contracts, as well as the complex calculations and encoding required for various intents, such as leverage, deleverage, collateral swap, and zaps.
+Building an application on top of the Compound Protocol can be a challenging and time-consuming process. This is due to the inherent risks associated with working with smart contracts, as well as the complex calculations and encoding required for various use cases, such as leverage, deleverage, collateral swap, and zaps.
 
-The Compound Kit reduces the need for developers to spend time and resources on building and maintaining their own smart contracts. The Compound Kit leverages [Protocolink](../why-protocolink.md), which provides the ability to add more intents in a highly modular way without deploying new smart contracts, and significantly reducing user risk.
+The Compound Kit reduces the need for developers to spend time and resources on building and maintaining their own smart contracts. The Compound Kit leverages [Protocolink](../why-protocolink.md), which provides the ability to add more use cases in a highly modular way without deploying new smart contracts, and significantly reducing user risk.
 
 ## Architecture Diagram
 
@@ -14,11 +14,11 @@ The Compound Kit reduces the need for developers to spend time and resources on 
 
 ## Developers
 
-Developers can adapt the Compound Kit SDK/API into their frontend or backend services. With the intents supported by the Compound Kit, they can easily generate transaction data, or utilize it for complex transaction scenarios. This significantly lowers the barrier for developers, allowing them to focus on providing a better user experience or infrastructure.
+Developers can adapt the Compound Kit SDK/API into their frontend or backend services. With the use cases supported by the Compound Kit, they can easily generate transaction data, or utilize it for complex transaction scenarios. This significantly lowers the barrier for developers, allowing them to focus on providing a better user experience or infrastructure.
 
 ## Compound Kit SDK & API
 
-The Compound Kit API and its TypeScript SDK generate and return transaction data based on the specified intents. It provides estimated execution results, calculates the optimal path for each intent, and forwards protocol logics to [Protocolink](../why-protocolink.md).
+The Compound Kit API and its TypeScript SDK generate and return transaction data based on the specified use cases. It provides estimated execution results, calculates the optimal path for each use case, and forwards protocol logics to [Protocolink](../why-protocolink.md).
 
 ### [TypeScript SDK](sdk/)
 
@@ -26,7 +26,7 @@ Interacts with the Compound Kit API without having to handle the low-level detai
 
 ### [API](api.md)
 
-Provides information about Compound markets, encodes a variety of intents, and includes comprehensive Swagger documentation for ease of use.
+Provides information about Compound markets, encodes a variety of use cases, and includes comprehensive Swagger documentation for ease of use.
 
 ## Tenderly Simulation Examples
 

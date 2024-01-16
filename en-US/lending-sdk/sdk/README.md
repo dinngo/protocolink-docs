@@ -277,7 +277,7 @@ You may also get all the existing portfolios of a user across protocols. &#x20;
 const portfolios = await adapter.getPortfolios(account);
 ```
 
-## 4. Select an Intent
+## 4. Select an use case
 
 Lending SDK supports all the popular operations of position management and lending-related operations across different lending platforms. Every operation includes
 
@@ -298,7 +298,7 @@ The supported operations are&#x20;
 * [Zap repay](../../compound-kit/sdk/zap-repay.md): swap any token to repay the debt in one transaction.
 * [Zap borrow](../../compound-kit/sdk/zap-borrow.md): borrow then swap to any token in one transaction.
 
-Depending on the selected intent, users will need to input different parameters, and the SDK will generate the expected outcome, including
+Depending on the selected use case, users will need to input different parameters, and the SDK will generate the expected outcome, including
 
 * Destination token amount.
 * User portfolio after the operation being executed.
