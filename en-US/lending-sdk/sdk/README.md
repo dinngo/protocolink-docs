@@ -1,6 +1,6 @@
 # ✳ SDK
 
-Lending SDK provides tools and build logics for lending purpose, which works as a part of [Protocolink JS SDK](../../integrate-js-sdk/overview.md). Please refer to [Broken link](broken-reference "mention") for complete setup and transaction construction.&#x20;
+Lending SDK provides tools and build logics for lending purpose, which works as a part of [Protocolink JS SDK](../../protocolink-sdk/overview.md). Please refer to [Broken link](broken-reference "mention") for complete setup and transaction construction.&#x20;
 
 ## GitHub
 

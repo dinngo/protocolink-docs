@@ -32,7 +32,7 @@ The logic should be composed by steps including:
 
 ## 6. Obtain the required approval permission and send router transaction
 
-To perform the logics, certain approvals need to be processed. You may refer to [estimate-router-data.md](../../integrate-js-sdk/how-to-use/estimate-router-data.md "mention") and [send-router-transaction.md](../../integrate-js-sdk/how-to-use/send-router-transaction.md "mention") for more details.
+To perform the logics, certain approvals need to be processed. You may refer to [estimate-router-data.md](../../protocolink-sdk/estimate-router-data.md "mention") and [send-router-transaction.md](../../protocolink-sdk/send-router-transaction.md "mention") for more details.
 
 ```typescript
 // User needs to permit the Protocolink user agent to borrow for the user

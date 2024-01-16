@@ -1,12 +1,40 @@
-# 4⃣ Send Router Transaction
+# Request Transaction Data
 
-Next, use `api.buildRouterTransactionRequest` to get the transaction request to be sent, which will essentially include the Router contract address (to), transaction data (data), and ETH to be carried in the transaction (value).
 
-```typescript
-const transactionRequest = await api.buildRouterTransactionRequest(routerData);
+
+{% swagger src="https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json" path="/v1/transactions/build" method="post" %}
+[https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json](https://api.swaggerhub.com/apis/dinngodev/Protocolink/1.0.0/swagger.json)
+{% endswagger %}
+
+Provides the transaction request that needs to be sent, comprising the Router contract `address` (to), transaction `data` (data), and the amount of ETH to be carried in the transaction (value).
+
+```javascript
+const getRouterTransactionRequest = async (routerData) => {
+  const result = await client.post("/v1/transactions/build", { body: routerData });
+  return result.data;
+};
+
+const routerData = {
+  chainId: 1,
+  account: USER_ADDRESS,
+  logics: [swapLogic, supplyLogic],
+  // If the estimate result returns permitData, the user should sign the permitData,
+  // and return the signed permitSig along with it.
+  permitData: permitData,
+  permitSig: permitSig,
+  // If there is only one referral address, you can use the 'referral' property.
+  // If there are multiple referral addresses, use 'referrals' and specify the rates accordingly.
+  referral: collector,
+  referrals: [
+    { collector: collector, rate: 5000 },
+    ...
+  ]
+};
+
+const transactionRequest = await getRouterTransactionRequest(routerData);
 ```
 
-The structure of the transactionRequest obtained is roughly as follows:
+The result contains a list of chains that looks the following:
 
 ```json
 {
@@ -16,13 +44,4 @@ The structure of the transactionRequest obtained is roughly as follows:
 }
 ```
 
-For more information on the **routerData** object and its properties, please refer to the [**Router Data Documentation**](../api-sdk-interfaces/global-types.md#routerdata).
-
-This is the Router transaction to be sent next. If you're using `ethers` package, you can refer to the code example to send the transaction:
-
-```typescript
-const signer = provider.getSigner(account);
-const tx = await signer.sendTransaction(transactionRequest);
-```
-
-We hope this example helps you get started quickly. If you have any questions or suggestions, please feel free to create an issue on Github, and we will respond as soon as possible.
+For more information on the **routerData** object and its properties, please refer to the [**Router Data Documentation**](../../protocolink-sdk/api-sdk-interfaces/global-types.md#routerdata).

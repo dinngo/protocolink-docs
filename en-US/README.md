@@ -21,16 +21,16 @@ Protocolink SDK/API allows developers to quickly build applications and enhance 
 
 Our SDK simplifies communication between APIs and DeFi/NFT smart contracts, allowing you to combine them to create diverse use cases within your interface.
 
-{% content-ref url="integrate-js-sdk/overview.md" %}
-[overview.md](integrate-js-sdk/overview.md)
+{% content-ref url="protocolink-sdk/overview.md" %}
+[overview.md](protocolink-sdk/overview.md)
 {% endcontent-ref %}
 
 ## API
 
 Our RESTful API provides comprehensive information and enables deeper and customized integrations.
 
-{% content-ref url="integrate-api/overview/" %}
-[overview](integrate-api/overview/)
+{% content-ref url="protocolink-api/overview/" %}
+[overview](protocolink-api/overview/)
 {% endcontent-ref %}
 
 ## Smart Contract

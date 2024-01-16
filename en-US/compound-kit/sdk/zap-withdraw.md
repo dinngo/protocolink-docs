@@ -103,7 +103,7 @@ const params = {
 
 Provides transaction data that is needed to execute this operation. Armed with the `logics` from the previous step, it generates the `to`, `data` and `value` including fees then signs and submits to finalize the operation.
 
-If you wish to include a referral for fee sharing, you can append the `referral` property to the `routerData` object. For detailed information on using `routerData`, please refer to the [Router Data Documentation](../../integrate-js-sdk/api-sdk-interfaces/global-types.md#routerdata).
+If you wish to include a referral for fee sharing, you can append the `referral` property to the `routerData` object. For detailed information on using `routerData`, please refer to the [Router Data Documentation](../../protocolink-sdk/api-sdk-interfaces/global-types.md#routerdata).
 
 ```typescript
 import * as compoundkit from '@protocolink/compound-kit';

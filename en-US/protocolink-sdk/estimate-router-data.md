@@ -20,7 +20,7 @@ const routerData: api.RouterData = {
 
 Next, use `api.estimateRouterData` to estimate how much funds will be spent (funds) and how many balances will be obtained (balances) from this transaction. It will also identify any approvals that the user needs to execute (approvals) before the transaction.
 
-In the current implementation of Permit2, users have two options for authorizing [`Agent`](../../smart-contract/overview/agent.md) to spend their assets: `permit` and `approve`. These methods provide distinct approaches to token authorization, allowing users to choose the one that best suits their needs. If not specified, `permit` is the default behavior.
+In the current implementation of Permit2, users have two options for authorizing [`Agent`](../smart-contract/overview/agent.md) to spend their assets: `permit` and `approve`. These methods provide distinct approaches to token authorization, allowing users to choose the one that best suits their needs. If not specified, `permit` is the default behavior.
 
 ```typescript
 type Permit2Type = 'permit' | 'approve';

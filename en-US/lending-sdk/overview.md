@@ -1,6 +1,6 @@
 # 🔮 Overview
 
-As [build-logics.md](../integrate-js-sdk/how-to-use/build-logics.md "mention") describes the general way to build logics by [Protocolink JS SDK ](broken-reference)from scratch, Lending SDK aims to provide a user friendly tool to build around lending functions.&#x20;
+As [build-logics.md](../protocolink-sdk/build-logics.md "mention") describes the general way to build logics by [Protocolink JS SDK ](broken-reference)from scratch, Lending SDK aims to provide a user friendly tool to build around lending functions.&#x20;
 
 ## Introduction to Lending SDK
 
