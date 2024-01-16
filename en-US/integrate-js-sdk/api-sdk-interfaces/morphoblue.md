@@ -144,7 +144,7 @@ The following code defines interfaces and functions related to the Morphoblue wi
 ```javascript
 interface WithdrawFields {
   marketId: string;
-  input: {
+  output: {
     token: {
       chainId: number;
       address: string;
@@ -202,7 +202,7 @@ The following code defines interfaces and functions related to the Morphoblue wi
 ```javascript
 interface WithdrawCollateralFields {
   marketId: string;
-  input: {
+  output: {
     token: {
       chainId: number;
       address: string;
