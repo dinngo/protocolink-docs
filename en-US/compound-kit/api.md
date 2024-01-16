@@ -1,5 +1,9 @@
 # 📗 API
 
+{% hint style="warning" %}
+For a more comprehensive protocol support and enhanced position and market information, we recommend using the [Broken link](broken-reference "mention").
+{% endhint %}
+
 ## GitHub
 
 [https://github.com/dinngo/compound-kit-api](https://github.com/dinngo/compound-kit-api)
