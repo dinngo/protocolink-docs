@@ -1,6 +1,6 @@
 # Zap repay
 
-Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
+Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
 Zap repay enables user to swap any token to repay the debt in one transaction.
 

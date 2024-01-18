@@ -1,6 +1,6 @@
 # Leverage long
 
-Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
+Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
 Leverage long enables user to achieve the desired collateral exposure in a single step using a flash loan.
 

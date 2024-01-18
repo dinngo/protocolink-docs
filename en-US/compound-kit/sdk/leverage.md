@@ -1,6 +1,6 @@
 # Leverage
 
-Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
+Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
 ## 5. Preview the Estimated Post-Leverage Position & Approval  Permissions
 

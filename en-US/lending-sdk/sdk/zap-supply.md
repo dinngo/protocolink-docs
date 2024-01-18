@@ -1,6 +1,6 @@
 # Zap supply
 
-Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
+Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
 Zap supply enables user to swap any token to supply token in one transaction.
 

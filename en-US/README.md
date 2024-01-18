@@ -1,11 +1,13 @@
 ---
 description: >-
   Protocolink is an infrastructural solution, enabling developers to build
-  intent-centric apps across various protocols, without dealing with smart
+  user-oriented apps across various protocols, without dealing with smart
   contracts.
 ---
 
 # 🔮 Overview
+
+
 
 {% hint style="info" %}
 We welcome your feedback, and if you have any questions or concerns, please feel free to reach out to us on our [Discord](https://discord.furucombo.app/).

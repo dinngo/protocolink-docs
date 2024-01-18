@@ -1,6 +1,6 @@
 # Deleverage
 
-Continuing from [#4.-select-an-intent](./#4.-select-an-intent "mention")
+Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
 Deleverage enables user to reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
 
