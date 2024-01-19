@@ -4,8 +4,8 @@ Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention
 
 Zap repay enables user to swap any token to repay the debt in one transaction.
 
-* Source token: the token to be provided by user.
-* Destination token: the debt token to be repaid.
+* Source token: the debt token to be repaid.
+* Destination token: the token to be provided by user.
 
 ## 5. Preview the estimated post-zap-repay portfolio
 
