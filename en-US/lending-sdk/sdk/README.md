@@ -25,6 +25,7 @@ Lending SDK coordinates the interaction between lending protocols and token swap
   * Aave V3
   * Radiant V2
   * Compound V3
+  * Morpho Blue
 * Swapper
   * Paraswap V5
   * Openocean v2

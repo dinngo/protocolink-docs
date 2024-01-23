@@ -42,6 +42,10 @@ Here are some transactions generated through Lending SDK:
 
 [Aave V3 Collateral Swap on Arbitrum](https://www.tdly.co/tx/42161/0x88b7c18f0d184e5fa7cb3b0e34e765d72a09eea64c84b38ec48a7834d0aa3a6d)
 
+[Morpho Blue Leverage on Ethereum](https://dashboard.tenderly.co/tx/1/0xa4883463a0760b3869397f93cd4c9fce395ac9ddb7a0a7adb85145a34c08d5b9)
+
+[Morpho Blue Deleverage on Ethereum](https://dashboard.tenderly.co/tx/1/0xe3a30ff9e7eec8075f3cc4c531663bc95950582f9fe41b374fc672ceb74936e5)
+
 
 
 
