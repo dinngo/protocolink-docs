@@ -24,11 +24,12 @@ Lending SDK coordinates the interaction between lending protocols and token swap
   * Aave V2
   * Aave V3
   * Radiant V2
+  * Spark
   * Compound V3
   * Morpho Blue
 * Swapper
   * Paraswap V5
-  * Openocean v2
+  * Openocean V2
 
 &#x20;User may register the protocols they want to use in the service.
 
@@ -278,14 +279,14 @@ You may also get all the existing portfolios of a user across protocols. &#x20;
 const portfolios = await adapter.getPortfolios(account);
 ```
 
-## 4. Select an use case
+## 4. Select a use case
 
 Lending SDK supports all the popular operations of position management and lending-related operations across different lending platforms. Every operation includes
 
 * User account&#x20;
 * User's portfolio on the protocol
-* Token information including source token, source token amount, and destination token. The role of source token and destination token depends on the operation. Details will be explained in the following section.
-* The acceptable slippage when swapping happens among the operation.
+* Token information includes source token, source token amount, and destination token. The role of the source token and the destination token depends on the operation. Details will be explained in the following section.
+* The acceptable slippage for token swap in the operation.
 
 The supported operations are&#x20;
 
