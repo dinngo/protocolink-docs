@@ -100,5 +100,5 @@
 
 ## Social medias
 
-* [Discord](https://discord.furucombo.app)
 * [Twitter](https://twitter.com/protocolink)
+* [Discord](https://discord.furucombo.app)
