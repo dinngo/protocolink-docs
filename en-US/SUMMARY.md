@@ -94,7 +94,11 @@
   * [Zap Borrow](compound-kit/sdk/zap-borrow.md)
 * [📗 API](compound-kit/api.md)
 
+## Video Tutorials
+
+* [1. Introducing Protocolink](https://youtu.be/3nJGUaGeSeA?si=qmmezFbn4avbx4xf)
+
 ## Social medias
 
-* [Twitter](https://twitter.com/protocolink)
 * [Discord](https://discord.furucombo.app)
+* [Twitter](https://twitter.com/protocolink)
