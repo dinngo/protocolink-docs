@@ -97,6 +97,7 @@
 ## Video Tutorials
 
 * [1. Introducing Protocolink](https://youtu.be/3nJGUaGeSeA?si=qmmezFbn4avbx4xf)
+* [2. Lending SDK](https://youtu.be/W9FPY-fVUt0)
 
 ## Social medias
 
