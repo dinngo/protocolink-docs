@@ -9,7 +9,7 @@
   * [Position Management](use-cases/position-management.md)
   * [Multi-Action Bundling](use-cases/multi-action-bundling.md)
 * [📋 Networks & Protocols](networks-and-protocols.md)
-* [🛡 Security & Audits](security-and-audits.md)
+* [🛡️ Security & Audits](security-and-audits.md)
 * [💎 Fees](fees.md)
 * [❓ FAQ](faq.md)
 
@@ -27,11 +27,11 @@
 ## Protocolink SDK
 
 * [🔮 Overview](protocolink-sdk/overview.md)
-* [1⃣ Install SDK](protocolink-sdk/install-sdk.md)
-* [2⃣ Build Logics](protocolink-sdk/build-logics.md)
-* [3⃣ Estimate Router Data](protocolink-sdk/estimate-router-data.md)
-* [4⃣ Send Router Transaction](protocolink-sdk/send-router-transaction.md)
-* [⚒ API SDK Interfaces](protocolink-sdk/api-sdk-interfaces/README.md)
+* [1️⃣ Install SDK](protocolink-sdk/install-sdk.md)
+* [2️⃣ Build Logics](protocolink-sdk/build-logics.md)
+* [3️⃣ Estimate Router Data](protocolink-sdk/estimate-router-data.md)
+* [4️⃣ Send Router Transaction](protocolink-sdk/send-router-transaction.md)
+* [⚒️ API SDK Interfaces](protocolink-sdk/api-sdk-interfaces/README.md)
   * [Global Types](protocolink-sdk/api-sdk-interfaces/global-types.md)
   * [FlashLoan Logic](protocolink-sdk/api-sdk-interfaces/flashloan-logic.md)
   * [Aave V2](protocolink-sdk/api-sdk-interfaces/aave-v2.md)
@@ -47,7 +47,7 @@
   * [Utility](protocolink-sdk/api-sdk-interfaces/utility.md)
   * [Uniswap V3](protocolink-sdk/api-sdk-interfaces/uniswap-v3.md)
   * [SyncSwap](protocolink-sdk/api-sdk-interfaces/syncswap.md)
-* [⚒ Common SDK Interfaces](protocolink-sdk/common-sdk-interfaces/README.md)
+* [⚒️ Common SDK Interfaces](protocolink-sdk/common-sdk-interfaces/README.md)
   * [Constants](protocolink-sdk/common-sdk-interfaces/constants.md)
   * [Network](protocolink-sdk/common-sdk-interfaces/network.md)
   * [Token](protocolink-sdk/common-sdk-interfaces/token.md)
@@ -57,7 +57,7 @@
 ## Lending SDK
 
 * [🔮 Overview](lending-sdk/overview.md)
-* [✳ SDK](lending-sdk/sdk/README.md)
+* [✳️ SDK](lending-sdk/sdk/README.md)
   * [Leverage long](lending-sdk/sdk/leverage-long.md)
   * [Leverage short](lending-sdk/sdk/leverage-short.md)
   * [Deleverage](lending-sdk/sdk/deleverage.md)
@@ -79,12 +79,12 @@
   * [Data Type](smart-contract/overview/data-type.md)
   * [ERC721/ERC1155 Support](smart-contract/overview/erc721-erc1155-support.md)
 * [📑 Deployment Addresses](smart-contract/deployment-addresses.md)
-* [🧑💻 Security Review Details](smart-contract/security-review-details.md)
+* [🧑‍💻 Security Review Details](smart-contract/security-review-details.md)
 
 ## COMPOUND KIT
 
 * [🔮 Overview](compound-kit/overview.md)
-* [✳ SDK](compound-kit/sdk/README.md)
+* [✳️ SDK](compound-kit/sdk/README.md)
   * [Leverage](compound-kit/sdk/leverage.md)
   * [Deleverage](compound-kit/sdk/deleverage.md)
   * [Collateral Swap](compound-kit/sdk/collateral-swap.md)
