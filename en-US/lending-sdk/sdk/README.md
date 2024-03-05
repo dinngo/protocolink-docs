@@ -1,4 +1,4 @@
-# ✳ SDK
+# ✳️ SDK
 
 Lending SDK provides tools and build logics for lending purpose, which works as a part of [Protocolink JS SDK](../../protocolink-sdk/overview.md). Please refer to [Broken link](broken-reference "mention") for complete setup and transaction construction.&#x20;
 
@@ -290,8 +290,8 @@ Lending SDK supports all the popular operations of position management and lendi
 
 The supported operations are&#x20;
 
-* [Leverage long](leverage-long.md): achieve the desired collateral exposure in a single step using a flash loan.
-* [Leverage short](leverage-short.md): achieve the desired collateral exposure in a single step using a flash loan.
+* [Leverage by collateral](leverage-by-collateral.md): achieve the desired collateral exposure in a single step using a flash loan.
+* [Leverage by debt](leverage-by-debt.md): achieve the desired debt exposure in a single step using a flash loan.
 * [Deleverage](deleverage.md): reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
 * [Collateral swap](collateral-swap.md): replace one collateral asset with another in a single step using a flash loan.
 * [Debt swap](debt-swap.md): replace one loan asset with another in a single step using a flash loan.

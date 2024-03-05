@@ -58,8 +58,8 @@
 
 * [🔮 Overview](lending-sdk/overview.md)
 * [✳️ SDK](lending-sdk/sdk/README.md)
-  * [Leverage long](lending-sdk/sdk/leverage-long.md)
-  * [Leverage short](lending-sdk/sdk/leverage-short.md)
+  * [Leverage By Collateral](lending-sdk/sdk/leverage-by-collateral.md)
+  * [Leverage By Debt](lending-sdk/sdk/leverage-by-debt.md)
   * [Deleverage](lending-sdk/sdk/deleverage.md)
   * [Collateral swap](lending-sdk/sdk/collateral-swap.md)
   * [Debt swap](lending-sdk/sdk/debt-swap.md)
