@@ -2,14 +2,14 @@
 
 Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
-Deleverage enables user to reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
+Deleverage enables users to reduce collateral exposure in a single step by using a flash loan to repay the borrowed asset.
 
-* Source token: the debt token.
-* Destination token: the collateral token.
+* Source token: the debt token to be repaid.
+* Destination token: the collateral token to be withdrawn.
 
 ## 5. Preview the estimated post-deleverage portfolio
 
-Specify the source token, source token amount, and the destination token that the user wants to deleverage, decreasing source token debt and destination token collateral. The function will return the destination token amount, the portfolio after deleveraging, and the logics to be executed.
+By specifying the source token, the source token amount, and the destination token that the user wants to deleverage, the function will return the withdrawn destination token amount, the updated user portfolio, and the logics to be executed.
 
 ```typescript
 // User obtains a quotation for deleveraging dest token
@@ -27,11 +27,12 @@ const deleverageInfo = await adapter.deleverage({
 
 The logic should be composed by steps including:
 
-1. Flashloan destination token
-2. Swap destination token to source token
-3. Repay source token
-4. Withdraw destination token (get collateral token from user if needed)
-5. Repay flashloan token
+1. Borrow a flash loan of the destination token
+2. Swap the destination token for the source token
+3. Repay the debt with the source token
+4. Get the protocol token (aToken) from the user
+5. Withdraw the destination token
+6. Repay the flash loan with the destination token
 
 ## 6. Obtain the required approval permission and send router transaction
 

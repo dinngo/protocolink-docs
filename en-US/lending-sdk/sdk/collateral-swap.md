@@ -2,14 +2,14 @@
 
 Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
-Collateral swap enables user to replace one collateral asset with another in a single step using a flash loan.
+Collateral swap enables users to replace one collateral asset with another in a single step by using a flash loan.
 
-* Source token: the collateral to be swapped.
-* Destination token: the collateral to be swapped to.
+* Source token: the collateral token to be swapped from.
+* Destination token: the collateral token to be swapped for.
 
 ## 5. Preview the estimated post-collateral-swap portfolio
 
-Specify the source token, source token amount, and the destination token that the user wants to swap. The function will return the destination token amount, the portfolio after swapping, and the logics to be executed.
+By specifying the source token, the source token amount, and the destination token, the function will return the destination token amount, the updated user portfolio, and the logics to be executed.
 
 ```typescript
 // User obtains a quotation for swapping the collateral from src token to dest token
@@ -25,15 +25,17 @@ const collateralSwapInfo = await adapter.collateralSwap({
 });
 ```
 
-The logic should be composed by steps including:
+The logic should include:
 
-1. Flashloan source token
-2. Swap source token to destination token
-3. Deposit destination token
-4. Withdraw destination token (return collateralized destination token and get collateralized source token from user if needed)
-5. Repay flashloan token
+1. Borrow a flash loan of the source token
+2. Swap the source token for the destination token
+3. Deposit the destination token
+4. Return the destination protocol token (aToken) to the user
+5. Get the source protocol token (aToken) from the user
+6. Withdraw the source token
+7. Repay the flash loan token with the source token
 
-## 6. Obtain the required approval permission and send router transaction
+## 6. Obtain the required approval permission and send the router transaction
 
 To perform the logics, certain approvals need to be processed. You may refer to [estimate-router-data.md](../../protocolink-sdk/estimate-router-data.md "mention") and [send-router-transaction.md](../../protocolink-sdk/send-router-transaction.md "mention") for more details.
 

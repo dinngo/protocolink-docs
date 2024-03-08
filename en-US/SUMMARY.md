@@ -58,6 +58,9 @@
 
 * [🔮 Overview](lending-sdk/overview.md)
 * [✳️ SDK](lending-sdk/sdk/README.md)
+  * [Open By Collateral](lending-sdk/sdk/open-by-collateral.md)
+  * [Open By Debt](lending-sdk/sdk/open-by-debt.md)
+  * [Close](lending-sdk/sdk/close.md)
   * [Leverage By Collateral](lending-sdk/sdk/leverage-by-collateral.md)
   * [Leverage By Debt](lending-sdk/sdk/leverage-by-debt.md)
   * [Deleverage](lending-sdk/sdk/deleverage.md)

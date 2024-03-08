@@ -2,14 +2,14 @@
 
 Continuing from [#id-4.-select-an-use-case](./#id-4.-select-an-use-case "mention").
 
-Zap borrow enables user to borrow then swap to any token in one transaction.
+Zap borrow enables users to borrow an asset and swap it for any token in one transaction.
 
-* Source token: the token to be borrowed from lending platform.
-* Destination token: the token that user receives.
+* Source token: the token to be borrowed from a lending protocol.
+* Destination token: the token that the user receives.
 
 ## 5. Preview the estimated post-zap-borrow portfolio
 
-Specify the source token, source token amount, and the destination token that the user wants to borrow. The function will return the destination token amount, the portfolio after borrow, and the logics to be executed.
+By specifying the source token, the source token amount, and the destination token, the function will return the destination token amount, the updated user portfolio, and the logics to be executed.
 
 ```typescript
 // User obtains a quotation for zap borrow
@@ -25,12 +25,12 @@ const zapBorrowInfo = await adapter.zapBorrow({
 });
 ```
 
-The logic should be composed by steps including:
+The logic should be include:
 
-1. Borrow source token
-2. Swap source token to destination token
+1. Borrow the source token
+2. Swap the source token to the destination token
 
-## 6. Obtain the required approval permission and send router transaction
+## 6. Obtain the required approval permission and send the router transaction
 
 To perform the logics, certain approvals need to be processed. You may refer to [estimate-router-data.md](../../protocolink-sdk/estimate-router-data.md "mention") and [send-router-transaction.md](../../protocolink-sdk/send-router-transaction.md "mention") for more details.
 

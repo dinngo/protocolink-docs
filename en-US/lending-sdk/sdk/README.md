@@ -290,11 +290,14 @@ Lending SDK supports all the popular operations of position management and lendi
 
 The supported operations are&#x20;
 
-* [Leverage by collateral](leverage-by-collateral.md): achieve the desired collateral exposure in a single step using a flash loan.
-* [Leverage by debt](leverage-by-debt.md): achieve the desired debt exposure in a single step using a flash loan.
-* [Deleverage](deleverage.md): reduce the collateral exposure in a single step using a flash loan to repay the borrowed asset.
-* [Collateral swap](collateral-swap.md): replace one collateral asset with another in a single step using a flash loan.
-* [Debt swap](debt-swap.md): replace one loan asset with another in a single step using a flash loan.
+* [Open by collateral](open-by-collateral.md): achieve the desired collateral exposure in a single step by using a flash loan.
+* [Open by debt](open-by-debt.md): achieve the desired debt exposure in a single step by using a flash loan.
+* [Close](close.md): empty all positions in a single step by using a flash loan to repay borrowed assets and withdraw deposited assets.
+* [Leverage by collateral](leverage-by-collateral.md): achieve the desired collateral exposure in a single step by using a flash loan.
+* [Leverage by debt](leverage-by-debt.md): achieve the desired debt exposure in a single step by using a flash loan.
+* [Deleverage](deleverage.md): reduce the collateral exposure in a single step by using a flash loan to repay the borrowed asset.
+* [Collateral swap](collateral-swap.md): replace one collateral asset with another in a single step by using a flash loan.
+* [Debt swap](debt-swap.md): replace one loan asset with another in a single step by using a flash loan.
 * [Zap supply](../../compound-kit/sdk/zap-supply.md): swap any token to supply token in one transaction.
 * [Zap withdraw](../../compound-kit/sdk/zap-withdraw.md): withdraw then swap to any token in one transaction.
 * [Zap repay](../../compound-kit/sdk/zap-repay.md): swap any token to repay the debt in one transaction.
@@ -303,7 +306,7 @@ The supported operations are&#x20;
 Depending on the selected use case, users will need to input different parameters, and the SDK will generate the expected outcome, including
 
 * Destination token amount.
-* User portfolio after the operation being executed.
+* User portfolio after the operation is executed.
 * Logics involved in the operation.
 
-If users are satisfied with the expected outcome and the fees, they can sign and submit the approval and transaction data. Typically, the approval is a one-time requirement for allowing Protocolink to act as a manager or a Permit2 token approval (which poses no risk as each user has their own agent within Protocolink - for further details, please visit [Broken link](broken-reference "mention")).
+If users are satisfied with the expected outcome and the fees, they can sign and submit the approval and transaction data. Typically, the approval is a one-time requirement for allowing Protocolink to act as a manager or a Permit2 token approval (which poses no risk as each user has their agent within Protocolink - for further details, please visit [Broken link](broken-reference "mention")).
