@@ -47,6 +47,7 @@
   * [Utility](protocolink-sdk/api-sdk-interfaces/utility.md)
   * [Uniswap V3](protocolink-sdk/api-sdk-interfaces/uniswap-v3.md)
   * [SyncSwap](protocolink-sdk/api-sdk-interfaces/syncswap.md)
+  * [ZeroEx V4](protocolink-sdk/api-sdk-interfaces/zeroex-v4.md)
 * [⚒️ Common SDK Interfaces](protocolink-sdk/common-sdk-interfaces/README.md)
   * [Constants](protocolink-sdk/common-sdk-interfaces/constants.md)
   * [Network](protocolink-sdk/common-sdk-interfaces/network.md)
