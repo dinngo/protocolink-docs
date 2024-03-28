@@ -290,8 +290,8 @@ Lending SDK supports all the popular operations of position management and lendi
 
 The supported operations are&#x20;
 
-* [Open by collateral](open-by-collateral.md): achieve the desired collateral exposure in a single step by using a flash loan.
-* [Open by debt](open-by-debt.md): achieve the desired debt exposure in a single step by using a flash loan.
+* [Open by collateral](open-by-collateral.md): swap any token to supply collateral, and achieve the desired collateral exposure in a single step by using a flash loan.
+* [Open by debt](open-by-debt.md): swap any token to supply collateral, and achieve the desired debt exposure in a single step by using a flash loan.
 * [Close](close.md): empty all positions in a single step by using a flash loan to repay borrowed assets and withdraw deposited assets.
 * [Leverage by collateral](leverage-by-collateral.md): achieve the desired collateral exposure in a single step by using a flash loan.
 * [Leverage by debt](leverage-by-debt.md): achieve the desired debt exposure in a single step by using a flash loan.
