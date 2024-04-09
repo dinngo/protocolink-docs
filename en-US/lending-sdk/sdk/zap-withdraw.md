@@ -37,8 +37,7 @@ To perform the logics, certain approvals need to be processed. You may refer to 
 ```typescript
 // User needs to permit the Protocolink user agent to borrow for the user
 const estimateResult = await apisdk.estimateRouterData(
-  { chainId, account, logics: zapWithdrawInfo.logics },
-  permit2Type
+  { chainId, account, logics: zapWithdrawInfo.logics }
 );
 
 // User obtains a zap withdraw transaction request

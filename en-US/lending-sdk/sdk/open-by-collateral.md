@@ -47,8 +47,7 @@ To perform the logics, certain approvals need to be processed. You may refer to 
 ```typescript
 // User needs to permit the Protocolink user agent to borrow for the user
 const estimateResult = await apisdk.estimateRouterData(
-  { chainId, account, logics: openByCollateralInfo.logics },
-  permit2Type
+  { chainId, account, logics: openByCollateralInfo.logics }
 );
 
 // User obtains an open-by-collateral transaction request

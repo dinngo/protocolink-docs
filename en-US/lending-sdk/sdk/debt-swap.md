@@ -40,8 +40,7 @@ To perform the logics, certain approvals need to be processed. You may refer to 
 ```typescript
 // User needs to permit the Protocolink user agent to borrow for the user
 const estimateResult = await apisdk.estimateRouterData(
-  { chainId, account, logics: debtSwapInfo.logics },
-  permit2Type
+  { chainId, account, logics: debtSwapInfo.logics }
 );
 
 // User obtains a debt swap transaction request

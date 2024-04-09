@@ -1,4 +1,4 @@
-# 3⃣ Estimate Router Data
+# 3️⃣ Estimate Router Data
 
 To properly estimate the logics of the router results, closely follow the steps below.
 
@@ -33,7 +33,7 @@ import * as api from '@protocolink/api';
 
 const estimateResult = await api.estimateRouterData(routerData);
 // or
-const estimateResult = await api.estimateRouterData(routerData, 'permit');
+const estimateResult = await api.estimateRouterData(routerData, { permit2Type: 'permit'});
 ```
 
 The `approve` method provides users with the necessary transactions to approve the expenditure of ERC20 tokens in the router data. Users must complete these approval transactions before sending the router transaction.
@@ -41,7 +41,7 @@ The `approve` method provides users with the necessary transactions to approve t
 ```typescript
 import * as api from '@protocolink/api';
 
-const estimateResult = await api.estimateRouterData(routerData, 'approve');
+const estimateResult = await api.estimateRouterData(routerData, { permit2Type: 'approve'});
 ```
 
 The structure of the `estimateResult` obtained is roughly as follows:
