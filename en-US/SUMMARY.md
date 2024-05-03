@@ -44,6 +44,7 @@
   * [Permit2](protocolink-sdk/api-sdk-interfaces/permit2.md)
   * [Radiant V2](protocolink-sdk/api-sdk-interfaces/radiant-v2.md)
   * [Spark](protocolink-sdk/api-sdk-interfaces/spark.md)
+  * [Stargate](protocolink-sdk/api-sdk-interfaces/stargate.md)
   * [Utility](protocolink-sdk/api-sdk-interfaces/utility.md)
   * [Uniswap V3](protocolink-sdk/api-sdk-interfaces/uniswap-v3.md)
   * [SyncSwap](protocolink-sdk/api-sdk-interfaces/syncswap.md)
