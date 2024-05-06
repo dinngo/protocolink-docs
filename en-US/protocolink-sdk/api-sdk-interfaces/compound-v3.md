@@ -282,7 +282,7 @@ The following code defines interfaces and functions related to the Compound V3 w
 
 <pre class="language-typescript"><code class="lang-typescript">interface WithdrawCollateralFields {
   marketId: string;
-  input: {
+  output: {
     token: {
       chainId: number;
       address: string;
