@@ -48,7 +48,8 @@ To initialize the `Adapter`, users must specify a `chainId`, with the option to 
 import * as common from '@protocolink/common';
 
 const chainId = common.ChainId.arbitrum;
-const adapter = new lending.Adapter(chainId/*, provider*/);
+const adapter = await lending.Adapter.createAdapter(chainId/*, provider*/);
+// Note: Adapter initialization is async starting from version 2.0.0
 ```
 
 ## 3. Get the portfolio
