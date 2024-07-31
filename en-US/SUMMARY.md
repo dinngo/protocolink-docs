@@ -38,6 +38,7 @@
   * [Aave V3](protocolink-sdk/api-sdk-interfaces/aave-v3.md)
   * [Balancer V2](protocolink-sdk/api-sdk-interfaces/balancer-v2.md)
   * [Compound V3](protocolink-sdk/api-sdk-interfaces/compound-v3.md)
+  * [Magicsea](protocolink-sdk/api-sdk-interfaces/magicsea.md)
   * [Morphoblue](protocolink-sdk/api-sdk-interfaces/morphoblue.md)
   * [OpenOcean V2](protocolink-sdk/api-sdk-interfaces/openocean-v2.md)
   * [ParaSwap V5](protocolink-sdk/api-sdk-interfaces/paraswap-v5.md)
