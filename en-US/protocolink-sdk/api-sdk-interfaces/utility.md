@@ -98,7 +98,10 @@ const flashLoanAggregatorQuotation = await api.protocols.utility.getFlashLoanAgg
   loans,
 });
 
-const [flashLoanAggregatorLoanLogic, flashLoanAggregatorRepayLogic] = api.protocols.utility.newFlashLoanAggregatorLogicPair(loans);
+const [flashLoanAggregatorLoanLogic, flashLoanAggregatorRepayLogic] = api.protocols.utility.newFlashLoanAggregatorLogicPair(
+  flashLoanAggregatorQuotation.protocolId,
+  flashLoanAggregatorQuotation.loans.toArray()
+);
 const logics = [flashLoanAggregatorLoanLogic];
 // logics.push(swapLogic)
 // logics.push(supplyLogic)
