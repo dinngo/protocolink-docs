@@ -7,12 +7,6 @@ description: >-
 
 # 🔮 Overview
 
-
-
-{% hint style="info" %}
-We welcome your feedback, and if you have any questions or concerns, please feel free to reach out to us on our [Discord](https://discord.furucombo.app/).
-{% endhint %}
-
 ## Architecture Diagram
 
 Protocolink SDK/API allows developers to quickly build applications and enhance the user experience.

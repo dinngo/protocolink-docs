@@ -112,4 +112,3 @@
 ## Social medias
 
 * [Twitter](https://twitter.com/protocolink)
-* [Discord](https://discord.furucombo.app)
