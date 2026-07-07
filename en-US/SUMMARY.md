@@ -9,6 +9,7 @@
   * [Position Management](use-cases/position-management.md)
   * [Multi-Action Bundling](use-cases/multi-action-bundling.md)
 * [📋 Networks & Protocols](networks-and-protocols.md)
+* [DeFi Oracle Meta Mainnet Status](chain-138-adoption-status.md)
 * [🛡️ Security & Audits](security-and-audits.md)
 * [💎 Fees](fees.md)
 * [❓ FAQ](faq.md)
