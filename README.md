@@ -1,3 +1,9 @@
+> **⚠️ This repository is archived and read-only.**
+>
+> The public Protocolink API and SDK were discontinued on October 2, 2026, and related smart contracts have been permanently disabled. Protocolink now operates as an enterprise integration service by Dinngo.
+>
+> Enterprise inquiries: support@dinngo.co
+
 # Protocolink Docs
 
 Welcome to the Protocolink documentation repository! This repository contains documentation for the Protocolink app in various languages.
